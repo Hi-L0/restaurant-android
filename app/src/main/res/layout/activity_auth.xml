@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="60dp">
+        <!-- Gmail Sign-in button -->
         <Button
             android:id="@+id/gmailSignInBtn"
             android:layout_width="wrap_content"
@@ -31,21 +32,33 @@
             android:text="Sign in with Facebook"
             android:backgroundTint="@color/blue"/>
     </LinearLayout>
-    <!-- Gmail Sign-in button -->
 
 
     <!-- Traditional Login -->
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email">
+    </TextView>
     <EditText
         android:id="@+id/loginEmailInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email" />
+        android:hint="Enter your email"
+        android:layout_marginBottom="20dp"/>
 
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password">
+    </TextView>
     <EditText
         android:id="@+id/loginPasswordInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="Enter your password"
         android:inputType="textPassword" />
 
     <Button
