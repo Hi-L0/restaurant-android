@@ -2,11 +2,14 @@ package com.example.myapplication.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -42,6 +45,21 @@ public class DishAdapter extends ArrayAdapter<Dish> {
 
         TextView priceTextView= (TextView) convertView.findViewById(R.id.menuPrice);
         priceTextView.setText(dish.getPrice());
+
+
+        FrameLayout menuDescFrame = convertView.findViewById(R.id.descFrame);
+
+
+        convertView.setOnClickListener(v->{
+                // Make the FrameLayout visible
+            if (menuDescFrame.getVisibility() == View.VISIBLE) {
+                // Hide the FrameLayout
+                menuDescFrame.setVisibility(View.GONE);
+            } else {
+                // Show the FrameLayout
+                menuDescFrame.setVisibility(View.VISIBLE);
+            }
+        });
 
         return convertView;
     }
