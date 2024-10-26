@@ -2,6 +2,11 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.google.gms.google.services)
 }
+//def googleClientId = project.rootProject.file("local.properties").exists() ?
+//        new Properties().with {
+//            it.load(new FileInputStream(project.rootProject.file("local.properties")))
+//            return it;
+//        }.getProperty("GOOGLE_CLIENT_ID") : ""
 tasks.withType(JavaCompile).configureEach {
     options.fork = true
     options.forkOptions.jvmArgs += [
@@ -29,6 +34,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        buildConfigField "String", "GOOGLE_CLIENT_ID", "\"${googleClientId}\""
     }
 
     buildTypes {
