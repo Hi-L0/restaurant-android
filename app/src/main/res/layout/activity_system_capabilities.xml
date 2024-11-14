@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SystemCapabilitiesActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number"
+        android:textSize="20sp"
+        ></TextView>
+    <EditText
+        android:id="@+id/phone_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:inputType="number"
+        android:layout_margin="12dp">
+    </EditText>
+    <Button
+        android:id="@+id/call_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/make_call"
+        >
+    </Button>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        />-->
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS message"
+        android:textSize="20sp"></TextView>
+
+    <EditText
+        android:id="@+id/sms_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sms_hint_number"
+        android:inputType="phone"/>
+    <EditText
+        android:id="@+id/sms_message_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sms_hint"
+        android:maxLines="5"
+        android:inputType="textMultiLine"
+        >
+    </EditText>
+    <Button
+        android:id="@+id/send_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_sms">
+    </Button>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_email"
+        android:textSize="20sp">
+    </TextView>
+
+    <Button
+        android:id="@+id/send_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_email_btn">
+    </Button>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_title"
+        android:textSize="20sp">
+    </TextView>
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_btn" />
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location_title"
+        android:textSize="20sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/location_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/location_input_hint"
+        android:maxLines="5"
+        android:inputType="textMultiLine"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location_btn" />
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/browser_search_title"
+        android:textSize="20sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/browser_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/browser_search_input"
+        android:maxLines="5"
+        android:inputType="textMultiLine"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/browser_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/browser_search_btn" />
+</LinearLayout>

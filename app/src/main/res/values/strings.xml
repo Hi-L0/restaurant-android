@@ -1,4 +1,23 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Restaurant</string>
+    <string name="action_btn">Actions</string>
+    <string name="make_call">Make a Call</string>
+    <string name="send_sms">Send as SMS</string>
+    <string name="sms_hint">Enter message</string>
+    <string name="sms_hint_number">Enter phone number for SMS</string>
     <string name="client_id">623627555430-bkv4uc8fe0837douh6itbeajghjrhtbg.apps.googleusercontent.com</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="send_email">Send Email</string>
+    <string name="send_email_btn">Send email</string>
+    <string name="share_title">Share</string>
+    <string name="share_btn">Share</string>
+    <string name="location_title">Location</string>
+    <string name="location_input_hint">Enter location</string>
+    <string name="location_btn">See location on Maps</string>
+    <string name="browser_search_title">Open in browser</string>
+    <string name="browser_search_input">what are you looking for</string>
+    <string name="browser_search_btn">Open in browser</string>
+
+    <string name="MAPS_API_KEY">AIzaSyBnHGNoiS7uqilxPTK_g_T4Ek87NfuYIVA</string>
+
 </resources>

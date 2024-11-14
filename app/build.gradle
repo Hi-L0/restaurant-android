@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
 }
 //def googleClientId = project.rootProject.file("local.properties").exists() ?
 //        new Properties().with {
@@ -47,6 +48,15 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        compose true
+        viewBinding true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.15"
+    }
+
 }
 
 dependencies {
@@ -58,10 +68,12 @@ dependencies {
     implementation libs.activity
     implementation libs.constraintlayout
     implementation libs.firebase.auth
+    implementation libs.play.services.maps
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
     implementation("com.google.android.gms:play-services-auth:20.5.0")
+    implementation("androidx.compose.material:material:1.7.5")
     // Import the BoM for the Firebase platform
 //    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
 //
