@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,6 +35,14 @@ public class CuisineListActivity extends AppCompatActivity {
                 intent.putExtra("selectedCuisine",selectedCuisine);
                 startActivity(intent);
             }
+        });
+        //actions btn
+        Button systemActionsBtn = findViewById(R.id.systemActionsBtn);
+
+        systemActionsBtn.setOnClickListener(v -> {
+            Intent systemActionsIntent = new Intent(this,SystemCapabilitiesActivity.class);
+            systemActionsIntent.putExtra("message_popup","testing");
+            startActivity(systemActionsIntent);
         });
     }
 }
